@@ -13,23 +13,18 @@ body {
   align-items: center;
   padding: 10px 40px;
   border-bottom: 2px solid #ccc;
-  flex-wrap: wrap;
 }
 
 .logo img {
   height: 60px;
-  max-width: 100%;
 }
 
-/* Menu superior */
 .menu-superior ul {
   list-style: none;
   display: flex;
   gap: 15px;
   margin: 0;
   padding: 0;
-  flex-wrap: wrap;
-  justify-content: center;
 }
 
 .menu-superior a {
@@ -42,7 +37,7 @@ body {
   color: #0077cc;
 }
 
-/* ===== Sacola de Compras ===== */
+/* ===== Sacola ===== */
 .sacola {
   display: flex;
   align-items: center;
@@ -59,11 +54,6 @@ body {
   height: 32px;
 }
 
-.sacola span {
-  font-size: 14px;
-  color: #333;
-}
-
 .sacola:hover {
   background: #e0e0e0;
 }
@@ -75,13 +65,10 @@ body {
   width: 90%;
   max-width: 1000px;
   margin: 20px auto;
-  gap: 20px;
-  flex-wrap: wrap;
 }
 
 .menu-lateral {
   width: 25%;
-  min-width: 250px;
 }
 
 .menu-lateral h3 {
@@ -119,7 +106,6 @@ body {
 /* ===== Banner ===== */
 .banner {
   width: 70%;
-  min-width: 300px;
 }
 
 .banner img {
@@ -127,7 +113,7 @@ body {
   border-radius: 4px;
 }
 
-/* ===== Seções de Produtos ===== */
+/* ===== Produtos ===== */
 .produtos {
   display: flex;
   justify-content: space-around;
@@ -142,8 +128,6 @@ body {
   padding: 15px;
   width: 45%;
   border-radius: 8px;
-  flex-grow: 1;
-  min-width: 280px;
 }
 
 .bloco h2 {
@@ -164,7 +148,6 @@ body {
 .produto {
   text-align: center;
   width: 45%;
-  min-width: 150px;
 }
 
 .produto img {
@@ -195,13 +178,10 @@ footer {
   align-items: center;
   padding: 15px 40px;
   margin-top: 40px;
-  flex-wrap: wrap;
-  text-align: center;
 }
 
 footer img {
   height: 40px;
-  max-width: 100%;
 }
 
 .social a img {
@@ -220,29 +200,26 @@ footer img {
 
 /* ===== RESPONSIVIDADE ===== */
 
-/* Tablet (até 900px) */
+/* Tablet */
 @media (max-width: 900px) {
   .container {
     flex-direction: column;
     align-items: center;
   }
 
-  .menu-lateral {
-    width: 100%;
-    text-align: center;
-  }
-
-  .banner {
-    width: 100%;
-  }
-
+  .menu-lateral,
+  .banner,
   .bloco {
     width: 100%;
   }
 }
 
-/* Celular (até 600px) */
+/* Celular */
 @media (max-width: 600px) {
+  body {
+    font-size: 18px;
+  }
+
   .topo {
     flex-direction: column;
     gap: 10px;
@@ -259,12 +236,49 @@ footer img {
     justify-content: center;
   }
 
+  .banner img {
+    border-radius: 0;
+  }
+
+  .grade {
+    flex-direction: column;
+    align-items: center;
+  }
+
   .produto {
+    width: 90%;
+    margin-bottom: 20px;
+  }
+
+  .produto img {
     width: 100%;
+    max-width: 320px;
+  }
+
+  .produto p {
+    font-size: 16px;
+    font-weight: bold;
+  }
+
+  .mais-produtos {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    padding: 10px 20px;
   }
 
   footer {
     flex-direction: column;
     gap: 10px;
+    text-align: center;
+  }
+
+  footer img {
+    height: 50px;
+  }
+
+  .social a img {
+    width: 36px;
+    height: 36px;
   }
 }
