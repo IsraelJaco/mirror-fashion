@@ -1,207 +1,270 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #fff;
-    color: #333;
-  }
-  
-  /* ===== Cabeçalho ===== */
-  .topo {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 40px;
-    border-bottom: 2px solid #ccc;
-  }
-  
-  /* Área do logotipo */
-  .logo img {
-    height: 60px;
-  }
-  
-  /* Menu superior */
-  .menu-superior ul {
-    list-style: none;
-    display: flex;
-    gap: 15px;
-    margin: 0;
-    padding: 0;
-  }
-  
-  .menu-superior a {
-    color: #333;
-    text-decoration: none;
-    font-size: 14px;
-  }
-  
-  .menu-superior a:hover {
-    color: #0077cc;
-  }
-  
-  /* ===== Sacola de Compras ===== */
-  .sacola {
-    display: flex;
-    align-items: center;
-    gap: 8px;
-    background: #f5f5f5;
-    padding: 5px 10px;
-    border-radius: 8px;
-    cursor: pointer;
-    transition: background 0.3s ease;
-  }
-  
-  .sacola img {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .sacola span {
-    font-size: 14px;
-    color: #333;
-  }
-  
-  .sacola:hover {
-    background: #e0e0e0;
-  }
-  
-  /* ===== Layout Principal ===== */
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #fff;
+  color: #333;
+}
+
+/* ===== Cabeçalho ===== */
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 2px solid #ccc;
+  flex-wrap: wrap;
+}
+
+.logo img {
+  height: 60px;
+  max-width: 100%;
+}
+
+/* Menu superior */
+.menu-superior ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.menu-superior a {
+  color: #333;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+.menu-superior a:hover {
+  color: #0077cc;
+}
+
+/* ===== Sacola de Compras ===== */
+.sacola {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.sacola img {
+  width: 32px;
+  height: 32px;
+}
+
+.sacola span {
+  font-size: 14px;
+  color: #333;
+}
+
+.sacola:hover {
+  background: #e0e0e0;
+}
+
+/* ===== Layout Principal ===== */
+.container {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  max-width: 1000px;
+  margin: 20px auto;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+.menu-lateral {
+  width: 25%;
+  min-width: 250px;
+}
+
+.menu-lateral h3 {
+  background: #ccc;
+  padding: 5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-top: 0;
+}
+
+.menu-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+
+.menu-lateral li {
+  margin-bottom: 8px;
+}
+
+.menu-lateral a {
+  color: #0077cc;
+  text-decoration: none;
+}
+
+.menu-lateral a:hover {
+  text-decoration: underline;
+}
+
+.menu-lateral input {
+  width: 90%;
+  padding: 5px;
+  margin-bottom: 15px;
+}
+
+/* ===== Banner ===== */
+.banner {
+  width: 70%;
+  min-width: 300px;
+}
+
+.banner img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+/* ===== Seções de Produtos ===== */
+.produtos {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: 20px auto;
+  gap: 20px;
+}
+
+.bloco {
+  background: #f5f5f5;
+  padding: 15px;
+  width: 45%;
+  border-radius: 8px;
+  flex-grow: 1;
+  min-width: 280px;
+}
+
+.bloco h2 {
+  font-size: 18px;
+  color: #333;
+  border-bottom: 2px solid #ccc;
+  margin-top: 0;
+}
+
+.grade {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.produto {
+  text-align: center;
+  width: 45%;
+  min-width: 150px;
+}
+
+.produto img {
+  width: 100%;
+  border-radius: 4px;
+}
+
+.mais-produtos {
+  display: inline-block;
+  background: #0077cc;
+  color: #fff;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+
+.mais-produtos:hover {
+  background: #005fa3;
+}
+
+/* ===== Rodapé ===== */
+footer {
+  background: #333;
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 40px;
+  margin-top: 40px;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+footer img {
+  height: 40px;
+  max-width: 100%;
+}
+
+.social a img {
+  margin-left: 10px;
+  border-radius: 50%;
+  background: #fff;
+  padding: 2px;
+  width: 28px;
+  height: 28px;
+  transition: transform 0.3s;
+}
+
+.social a img:hover {
+  transform: scale(1.1);
+}
+
+/* ===== RESPONSIVIDADE ===== */
+
+/* Tablet (até 900px) */
+@media (max-width: 900px) {
   .container {
-    display: flex;
-    justify-content: space-between;
-    width: 90%;
-    max-width: 1000px;
-    margin: 20px auto;
-  }
-  
-  .menu-lateral {
-    width: 25%;
-  }
-  
-  .menu-lateral h3 {
-    background: #ccc;
-    padding: 5px;
-    font-size: 14px;
-    text-transform: uppercase;
-    margin-top: 0;
-  }
-  
-  .menu-lateral ul {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .menu-lateral li {
-    margin-bottom: 8px;
-  }
-  
-  .menu-lateral a {
-    color: #0077cc;
-    text-decoration: none;
-  }
-  
-  .menu-lateral a:hover {
-    text-decoration: underline;
-  }
-  
-  .menu-lateral input {
-    width: 90%;
-    padding: 5px;
-    margin-bottom: 15px;
-  }
-  
-  /* ===== Banner ===== */
-  .banner {
-    width: 70%;
-  }
-  
-  .banner img {
-    width: 100%;
-    border-radius: 4px;
-  }
-  
-  /* ===== Seções de Produtos ===== */
-  .produtos {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    width: 90%;
-    margin: 20px auto;
-    gap: 20px;
-  }
-  
-  .bloco {
-    background: #f5f5f5;
-    padding: 15px;
-    width: 45%;
-    border-radius: 8px;
-  }
-  
-  .bloco h2 {
-    font-size: 18px;
-    color: #333;
-    border-bottom: 2px solid #ccc;
-    margin-top: 0;
-  }
-  
-  .grade {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-    gap: 10px;
-    margin-top: 10px;
-  }
-  
-  .produto {
-    text-align: center;
-    width: 45%;
-  }
-  
-  .produto img {
-    width: 100%;
-    border-radius: 4px;
-  }
-  
-  .mais-produtos {
-    display: inline-block;
-    background: #0077cc;
-    color: #fff;
-    padding: 5px 10px;
-    text-decoration: none;
-    border-radius: 4px;
-    margin-top: 10px;
-  }
-  
-  .mais-produtos:hover {
-    background: #005fa3;
-  }
-  
-  /* ===== Rodapé ===== */
-  footer {
-    background: #333;
-    color: #fff;
-    display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 15px 40px;
-    margin-top: 40px;
   }
-  
-  footer img {
-    height: 40px;
+
+  .menu-lateral {
+    width: 100%;
+    text-align: center;
   }
-  
-  .social a img {
-    margin-left: 10px;
-    border-radius: 50%;
-    background: #fff;
-    padding: 2px;
-    width: 28px;
-    height: 28px;
-    transition: transform 0.3s;
+
+  .banner {
+    width: 100%;
   }
-  
-  .social a img:hover {
-    transform: scale(1.1);
+
+  .bloco {
+    width: 100%;
   }
-  
+}
+
+/* Celular (até 600px) */
+@media (max-width: 600px) {
+  .topo {
+    flex-direction: column;
+    gap: 10px;
+    padding: 15px;
+  }
+
+  .menu-superior ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .sacola {
+    justify-content: center;
+  }
+
+  .produto {
+    width: 100%;
+  }
+
+  footer {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
